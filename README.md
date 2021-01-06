@@ -1,18 +1,18 @@
-# gatsby-starter-strata
+### Hi there, I'm Amy 👋
 
-**This is a starter for Gatsby.js V2.**
+<a href="https://www.linkedin.com/in/amytangcodes/">
+  <img align="left" alt="Amy Tang | Linkedin" width="20px" src="./assets/linkedin.svg" />
+</a>
+<a href="https://www.instagram.com/amytangcodes/">
+  <img align="left" alt="Amy Tang | Instagram" width="21px" src="./assets/instagram.svg" />
+</a>
 
-**The older V1 version of this starter can be found on the v1 branch**
+<br>
+<br>
 
-Gatsby starter based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata). Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
-
-## Preview
-
-http://gatsby-strata.surge.sh/
-
-## Installation
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-starter-strata https://github.com/codebushi/gatsby-starter-strata`
-
-Run `gatsby develop` in the terminal to start.
+- 🔭 I’m currently working on a camp dashboard app
+- 🌱 I’m currently learning Redux, React Hooks, and reading through [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/) with a few folks from [Bridge](https://bridgeschool.io/).
+- 👯 I’m looking to collaborate with designers and developers.
+- 🤔 I’m looking for help with best practices in React and Ruby on Rails.
+- 💬 Ask me about anything.
+- 📫 How to reach me: hello@amytangcodes.com
