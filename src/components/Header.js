@@ -1,10 +1,11 @@
 import React from 'react'
 
 import HeaderFooter from './HeaderFooter'
+import HeaderMenu from './HeaderMenu'
 
 const Header = () => (
   <header id="header">
-    <div className="inner">
+    <section className="inner">
       <a
         href="http://amytangcodes.com/"
         className="image avatar"
@@ -14,10 +15,13 @@ const Header = () => (
       </a>
       <h1>
         <strong>Hi, I'm Amy Tang</strong>.
-        <br /> I'm a Software Developer living
-        <br /> in Toronto, On.
       </h1>
-    </div>
+      <p>
+        I'm a Software Developer living
+        <br /> in Toronto, ON.
+      </p>
+    </section>
+    <HeaderMenu />
     <HeaderFooter />
   </header>
 )

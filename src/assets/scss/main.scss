@@ -49,6 +49,10 @@
 $size-header-width: 35%;
 $size-header-pad: 4em;
 
+// -----------------------------------------
+// ELEMENTS
+// -----------------------------------------
+
 /* Basic */
 
 body {
@@ -433,6 +437,10 @@ input[type='radio'] {
   color: _palette(fg-light) !important;
   opacity: 1;
 }
+
+// -----------------------------------------
+// COMPONENTS
+// -----------------------------------------
 
 /* Box */
 
@@ -933,13 +941,16 @@ input[type='button'],
   }
 }
 
+// -----------------------------------------
+// MAIN SECTIONS/ COMPONENTS
+// -----------------------------------------
+
 /* Header */
 
 #header {
   @include vendor('display', 'flex');
   @include vendor('flex-direction', 'column');
   @include vendor('align-items', 'flex-end');
-  @include vendor('justify-content', 'space-between');
   // background-color: _palette(accent2, bg);
   // background-attachment: scroll, fixed;
   // background-image: url('images/overlay.png'), url('../images/bg.jpg');
@@ -961,9 +972,6 @@ input[type='button'],
   }
 
   > .inner {
-    @include vendor('flex-grow', '1');
-    margin: 0 0 ($size-header-pad * 0.5) 0;
-
     &:after {
       background: _palette(border2);
       background: linear-gradient(
@@ -975,11 +983,15 @@ input[type='button'],
       position: absolute;
       content: '';
       width: 1px;
-      height: 540px;
+      height: 700px;
       top: 30px;
       right: -10px;
       bottom: 0;
     }
+  }
+
+  section {
+    margin: 0 0 ($size-header-pad * 0.5) 0;
   }
 
   strong,
@@ -1012,6 +1024,24 @@ input[type='button'],
     height: 10em;
     span {
       display: none;
+    }
+  }
+}
+
+/* Menu */
+
+#menu {
+  .menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .menu-item {
+      padding: 0;
+      margin: 10px 0;
+      .menu-link {
+        font-weight: 400;
+        border: 0;
+      }
     }
   }
 }
@@ -1078,7 +1108,16 @@ input[type='button'],
       padding-top: 0;
     }
   }
+
+  .section__title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    // color: $dark-body-color;
+    line-height: 1;
+  }
 }
+
+// -----------------------------------------
 
 /* Poptrox */
 
@@ -1261,6 +1300,10 @@ body.is-touch {
     }
   }
 }
+
+// -----------------------------------------
+// MEDIA BREAKPOINTS
+// -----------------------------------------
 
 /* XLarge */
 
