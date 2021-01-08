@@ -940,13 +940,13 @@ input[type='button'],
   @include vendor('flex-direction', 'column');
   @include vendor('align-items', 'flex-end');
   @include vendor('justify-content', 'space-between');
-  background-color: _palette(accent2, bg);
-  background-attachment: scroll, fixed;
-  background-image: url('images/overlay.png'), url('../images/bg.jpg');
-  background-position: top left, top left;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, auto;
-  color: _palette(accent2, fg);
+  // background-color: _palette(accent2, bg);
+  // background-attachment: scroll, fixed;
+  // background-image: url('images/overlay.png'), url('../images/bg.jpg');
+  // background-position: top left, top left;
+  // background-repeat: repeat, no-repeat;
+  // background-size: auto, auto;
+  color: _palette(fg);
   height: 100%;
   left: 0;
   padding: ($size-header-pad * 2) $size-header-pad;
@@ -963,11 +963,28 @@ input[type='button'],
   > .inner {
     @include vendor('flex-grow', '1');
     margin: 0 0 ($size-header-pad * 0.5) 0;
+
+    &:after {
+      background: _palette(border2);
+      background: linear-gradient(
+        to bottom,
+        _palette(border2) 0%,
+        _palette(border2) 48%,
+        _palette(bg) 100%
+      );
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 540px;
+      top: 30px;
+      right: -10px;
+      bottom: 0;
+    }
   }
 
   strong,
   b {
-    color: _palette(accent2, fg-bold);
+    color: _palette(fg-bold);
   }
 
   h2,
@@ -975,11 +992,11 @@ input[type='button'],
   h4,
   h5,
   h6 {
-    color: _palette(accent2, fg-bold);
+    color: _palette(fg-bold);
   }
 
   h1 {
-    color: _palette(accent2, fg);
+    color: _palette(fg);
     font-size: 1.35em;
     line-height: 1.75em;
     margin: 0;
@@ -993,6 +1010,9 @@ input[type='button'],
     background-position: top center;
     width: 10em;
     height: 10em;
+    span {
+      display: none;
+    }
   }
 }
 
@@ -1003,12 +1023,12 @@ input[type='button'],
     margin: (_size(element-margin) * 0.5) 0 0 0;
 
     a {
-      color: _palette(accent2, fg-light);
+      color: _palette(fg-light);
     }
   }
 
   .copyright {
-    color: _palette(accent2, fg-light);
+    color: _palette(fg-light);
     font-size: 0.8em;
     list-style: none;
     margin: (_size(element-margin) * 0.5) 0 0 0;
@@ -1016,9 +1036,9 @@ input[type='button'],
 
     li {
       border-left: solid 1px _palette(accent2, border);
-      display: inline-block;
       line-height: 1em;
       margin-left: 0.75em;
+      margin-bottom: 0.75em;
       padding-left: 0.75em;
 
       &:first-child {
@@ -1042,6 +1062,10 @@ input[type='button'],
   padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
     $size-header-pad;
   width: calc(100% - #{$size-header-width});
+
+  p {
+    font-size: 1.3em;
+  }
 
   > section {
     border-top: solid 2px _palette(border);

@@ -5,6 +5,14 @@ const Footer = () => (
     <div className="inner">
       <ul className="icons">
         <li>
+          <a
+            href="https://www.linkedin.com/in/amytangcodes/"
+            className="icon fa-linkedin"
+          >
+            <span className="label">LinkedIn</span>
+          </a>
+        </li>
+        <li>
           <a href="https://github.com/amytangcodes" className="icon fa-github">
             <span className="label">Github</span>
           </a>
@@ -21,7 +29,7 @@ const Footer = () => (
       <ul className="copyright">
         <li>&copy; Amy Tang Codes</li>
         <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
+          Design Template: <a href="http://html5up.net">HTML5 UP</a>
         </li>
       </ul>
     </div>
