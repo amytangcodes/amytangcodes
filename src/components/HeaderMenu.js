@@ -5,13 +5,18 @@ class Menu extends Component {
   render() {
     // const menu = this.props.data
 
+    // console.log({ menu })
+
     const menuBlock = (
       <ul className="menu__list">
         <li className="menu__list-item">
-          <Link to="/">Home</Link>
+          <Link to="/">About</Link>
         </li>
         <li className="menu__list-item">
           <Link to="/resume/">Resume</Link>
+        </li>
+        <li className="menu__list-item">
+          <Link to="/page2/">page2</Link>
         </li>
       </ul>
     )

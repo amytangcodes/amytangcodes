@@ -5,7 +5,7 @@ const Cover = () => {
     <section id="one">
       <p>
         I'm a Software Developer with a mix of experience working on web
-        applications. I’m currently interested in roles with a focus on working
+        applications. I'm currently interested in roles with a focus on working
         with current Javascript frameworks as I do think my strengths are in UI
         development, but I also want to continue my experiences in backend
         development.
@@ -19,7 +19,7 @@ const Cover = () => {
         <li>React</li>
         <li>Ruby on Rails </li>
         <li>Phoenix/ Elixir</li>
-        <li>MySQL</li>
+        <li>Relational databases (PostgreSQL, MSSQL, etc.)</li>
         <li>Postman</li>
         <li>Github, Terminal</li>
       </ul>
