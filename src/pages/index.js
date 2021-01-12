@@ -21,6 +21,9 @@ const HomeIndex = () => {
           <li>Postman</li>
           <li>Github, Terminal</li>
         </ul>
+        <h2>
+          <em>2021 Learning Plan</em>
+        </h2>
         <p>
           2020 has been quite the year. After being part of a major layoff, I
           kept busy for most of 2020 renovating my house. 2021 plan is to
@@ -36,6 +39,10 @@ const HomeIndex = () => {
         </p>
         <p>Deploy a timetracker project using Devise with Rails and React.</p>
         <p>Add projects to this website!</p>
+        <p>
+          Oh by the way, this{' '}
+          <a href="https://pomodoro-tracker.com/">pomodoro timer</a> is awesome!
+        </p>
       </section>
     </Layout>
   )
