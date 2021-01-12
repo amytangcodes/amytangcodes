@@ -3,17 +3,15 @@ import { Link } from 'gatsby'
 
 class Menu extends Component {
   render() {
+    const { menu } = this.props
+
     const menuBlock = (
       <ul className="menu__list">
-        <li className="menu__list-item">
-          <Link to="/">About</Link>
-        </li>
-        <li className="menu__list-item">
-          <Link to="/resume/">Resume</Link>
-        </li>
-        <li className="menu__list-item">
-          <Link to="/page2/">page2</Link>
-        </li>
+        {menu.map((item, i) => (
+          <li className="menu__list-item" key={i}>
+            <Link to={item.path}>{item.name}</Link>
+          </li>
+        ))}
       </ul>
     )
 
