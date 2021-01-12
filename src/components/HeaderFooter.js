@@ -22,7 +22,8 @@ export class HeaderFooter extends Component {
         <ul className="copyright">
           <li>&copy; Amy Tang Codes</li>
           <li>
-            Design Template: <a href="http://html5up.net">HTML5 UP</a>
+            Design template inspired by{' '}
+            <a href="http://html5up.net">HTML5 UP</a>
           </li>
         </ul>
       </section>

@@ -18,7 +18,6 @@ const HomeIndex = () => {
           <li>
             Relational databases (PostgreSQL, MySQL), NoSQL databases (MongoDB)
           </li>
-          <li></li>
           <li>Postman</li>
           <li>Github, Terminal</li>
         </ul>

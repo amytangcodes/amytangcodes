@@ -32,7 +32,7 @@ module.exports = {
         },
       ],
     },
-    homePage: {
+    cover: {
       description:
         "Still feeling like a jr developer I like to move quickly and keep reviewing basics. Keep at algorithm problems and React learning. Here are the basics that I'm going to review in 2021:",
       descriptionList: [
