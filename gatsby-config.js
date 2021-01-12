@@ -1,19 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: 'Amy Tang Codes',
+    siteTitle: 'Amy Tang Codes',
     author: 'Amy Tang',
-    description: 'Another software developer portfolio site!',
+    siteDescription: 'Another software developer portfolio site!',
     header: {
       description: 'Another software developer portfolio site!',
     },
-    updateDescription:
-      "Since I've only been programming for about half a year and I like to move quickly, I need to review the basics. Oftentimes, I find myself not remembering how to do certain things like setting up a GraphQL server or setting some Typescript types. Also, I would like to revisit algorithms and data structures as I haven't mastered them 100%. Here are the basics that I'm going to review in 2021:",
-    //     Setting up a Node.js Typescript backend
-    // Algorithms and data structures
-    // Big O Notation
-    // Server-side rendering
-    // Typescript
-    // Authentication with JWTs"
+    homePage: {
+      description:
+        "Still feeling like a jr developer I like to move quickly and keep reviewing basics. Keep at algorithm problems and React learning. Here are the basics that I'm going to review in 2021:",
+      descriptionList: [
+        'Setting up a Node.js Typescript backend',
+        'Algorithms and data structures',
+        'Big O Notation',
+        'Server-side rendering',
+        'Typescript',
+        "Authentication with JWTs'",
+      ],
+    },
     footer: [
       {
         href: 'https://www.linkedin.com/in/amytangcodes/',
@@ -28,13 +32,13 @@ module.exports = {
         label: 'Email',
       },
     ],
-    menu: [
+    menuLinks: [
       {
-        label: 'About',
+        name: 'About',
         path: '/',
       },
       {
-        label: 'Resume',
+        name: 'Resume',
         path: '/resume/',
       },
     ],
