@@ -4,7 +4,30 @@ module.exports = {
     author: 'Amy Tang',
     siteDescription: 'Another software developer portfolio site!',
     header: {
-      description: 'Another software developer portfolio site!',
+      footer: [
+        {
+          href: 'https://www.linkedin.com/in/amytangcodes/',
+          label: 'LinkedIn',
+        },
+        {
+          href: 'https://github.com/amytangcodes',
+          label: 'Github',
+        },
+        {
+          href: 'mailto:hello@amytangcodes.com',
+          label: 'Email',
+        },
+      ],
+      menuLinks: [
+        {
+          name: 'About',
+          path: '/',
+        },
+        {
+          name: 'Resume',
+          path: '/resume/',
+        },
+      ],
     },
     homePage: {
       description:
@@ -18,30 +41,6 @@ module.exports = {
         "Authentication with JWTs'",
       ],
     },
-    footer: [
-      {
-        href: 'https://www.linkedin.com/in/amytangcodes/',
-        label: 'LinkedIn',
-      },
-      {
-        href: 'https://github.com/amytangcodes',
-        label: 'Github',
-      },
-      {
-        href: 'mailto:hello@amytangcodes.com',
-        label: 'Email',
-      },
-    ],
-    menuLinks: [
-      {
-        name: 'About',
-        path: '/',
-      },
-      {
-        name: 'Resume',
-        path: '/resume/',
-      },
-    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',

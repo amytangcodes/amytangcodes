@@ -4,12 +4,14 @@ import HeaderCover from './HeaderCover'
 import HeaderMenu from './HeaderMenu'
 import HeaderFooter from './HeaderFooter'
 
-const Header = () => {
+const Header = ({ data }) => {
+  console.log({ data })
+  const { footer, menuLinks } = data
   return (
     <header id="header">
       <HeaderCover />
-      <HeaderMenu />
-      <HeaderFooter />
+      <HeaderMenu data={menuLinks} />
+      <HeaderFooter data={footer} />
     </header>
   )
 }
