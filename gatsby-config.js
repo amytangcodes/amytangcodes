@@ -9,10 +9,6 @@ module.exports = {
           name: 'About',
           path: '/',
         },
-        {
-          name: 'Resume',
-          path: '/resume/',
-        },
       ],
       footerLinks: [
         {
