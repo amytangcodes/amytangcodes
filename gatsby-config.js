@@ -4,20 +4,6 @@ module.exports = {
     author: 'Amy Tang',
     siteDescription: 'Another software developer portfolio site!',
     header: {
-      footer: [
-        {
-          href: 'https://www.linkedin.com/in/amytangcodes/',
-          label: 'LinkedIn',
-        },
-        {
-          href: 'https://github.com/amytangcodes',
-          label: 'Github',
-        },
-        {
-          href: 'mailto:hello@amytangcodes.com',
-          label: 'Email',
-        },
-      ],
       menuLinks: [
         {
           name: 'About',
@@ -26,6 +12,23 @@ module.exports = {
         {
           name: 'Resume',
           path: '/resume/',
+        },
+      ],
+      footerLinks: [
+        {
+          href: 'https://www.linkedin.com/in/amytangcodes/',
+          label: 'LinkedIn',
+          icon: 'fa-linkedin',
+        },
+        {
+          href: 'https://github.com/amytangcodes',
+          label: 'Github',
+          icon: 'fa-github',
+        },
+        {
+          href: 'mailto:hello@amytangcodes.com',
+          label: 'Email',
+          icon: 'fa-envelope-o',
         },
       ],
     },

@@ -5,13 +5,12 @@ import HeaderMenu from './HeaderMenu'
 import HeaderFooter from './HeaderFooter'
 
 const Header = ({ data }) => {
-  console.log({ data })
-  const { footer, menuLinks } = data
+  const { footerLinks, menuLinks } = data
   return (
     <header id="header">
       <HeaderCover />
-      <HeaderMenu data={menuLinks} />
-      <HeaderFooter data={footer} />
+      <HeaderMenu menu={menuLinks} />
+      <HeaderFooter footer={footerLinks} />
     </header>
   )
 }

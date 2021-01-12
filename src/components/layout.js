@@ -15,13 +15,14 @@ const Template = ({ children }) => (
             author
             siteDescription
             header {
-              footer {
-                href
-                label
-              }
               menuLinks {
                 name
                 path
+              }
+              footerLinks {
+                href
+                label
+                icon
               }
             }
           }
