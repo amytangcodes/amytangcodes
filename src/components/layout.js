@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { StaticQuery } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+import Header from './Header'
 import '../assets/scss/main.scss'
 
 const Template = ({ children }) => (
@@ -42,7 +42,7 @@ const Template = ({ children }) => (
             ]}
           ></Helmet>
           <Header data={header} />
-          <div id="main">{children}</div>
+          <section id="main">{children}</section>
         </Fragment>
       )
     }}

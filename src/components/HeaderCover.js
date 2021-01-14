@@ -13,10 +13,7 @@ const HeaderCover = () => {
       <h1>
         <strong>Hi, I'm Amy Tang</strong>.
       </h1>
-      <p>
-        I'm a Software Developer living
-        <br /> in Toronto, ON.
-      </p>
+      <p>I'm a Software Developer based in Toronto, ON.</p>
     </section>
   )
 }

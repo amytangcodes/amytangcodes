@@ -30,7 +30,7 @@ const HomeIndex = () => {
           continue learning more about Software Development fundamentals by...
         </p>
         <p>
-          Sticking with 1-2 algorithm problems weekly at{' '}
+          Completing 1-2 algorithm problems weekly at{' '}
           <a href="https://codesignal.com/">Codesignal</a>.
         </p>
         <p>

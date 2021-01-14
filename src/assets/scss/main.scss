@@ -240,7 +240,6 @@ header {
   p {
     color: _palette(fg-light);
     position: relative;
-    margin: 0 0 (_size(element-margin) * 0.75) 0;
   }
 
   h2 + p {
@@ -972,6 +971,7 @@ input[type='button'],
   }
 
   > .inner {
+    max-width: 300px;
     &:after {
       background: _palette(border2);
       background: linear-gradient(
@@ -1115,9 +1115,28 @@ input[type='button'],
     margin-bottom: 30px;
     font-weight: bold;
     line-height: 1;
+    color: _palette(black);
   }
 }
 
+#resume {
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 80%;
+    .iframe-resume {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      // embed {
+      //   width: 100%;
+      // }
+    }
+  }
+}
 // -----------------------------------------
 
 /* Poptrox */
