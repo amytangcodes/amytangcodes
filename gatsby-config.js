@@ -13,10 +13,6 @@ module.exports = {
           name: 'Resume',
           path: '/resume',
         },
-        {
-          name: 'Portfolio',
-          path: '/portfolio',
-        },
       ],
       footerLinks: [
         {
