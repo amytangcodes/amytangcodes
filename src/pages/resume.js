@@ -7,14 +7,11 @@ const Resume = () => {
     <Layout>
       <section id="resume">
         <h1 className="section__title">Resume</h1>
-        <ul className="actions">
-          <li>
-            <a href={PdfResume} className="button">
-              PDF Resume
-            </a>
-          </li>
-        </ul>
-
+        <div className="button-container">
+          <a href={PdfResume} className="button">
+            Download PDF Resume
+          </a>
+        </div>
         <div class="iframe-container">
           <iframe src={PdfResume} title="Resume" class="iframe-resume">
             Presss me: <a href={PdfResume}>Download PDF</a>
