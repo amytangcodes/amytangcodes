@@ -33,7 +33,7 @@ const HomeIndex = () => {
           Rebuild amytangcodes.com using Gatsby, Netlify and GraphQL
         </p>
         <p>
-          Complete 4-5 algorithm problems weekly at{' '}
+          Complete 4-5 algorithm problems weekly. Check out{' '}
           <a href="https://codesignal.com/">Codesignal</a>.
         </p>
         <p>
