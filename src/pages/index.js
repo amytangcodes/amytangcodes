@@ -29,8 +29,11 @@ const HomeIndex = () => {
           kept busy for most of 2020 renovating my house. 2021 plan is to
           continue learning more about Software Development fundamentals by...
         </p>
+        <p className="font-linethrough">
+          Rebuild amytangcodes.com using Gatsby, Netlify and GraphQL
+        </p>
         <p>
-          Completing 1-2 algorithm problems weekly at{' '}
+          Complete 4-5 algorithm problems weekly at{' '}
           <a href="https://codesignal.com/">Codesignal</a>.
         </p>
         <p>
