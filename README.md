@@ -1,12 +1,5 @@
 ### Hi there, I'm Amy 👋
 
-<a href="https://www.linkedin.com/in/amytangcodes/">
-  <img align="left" alt="Amy Tang | Linkedin" width="20px" src="./assets/linkedin.svg" />
-</a>
-
-<br>
-<br>
-
 - 💻 I’m currently working on overhauling my website using Gatsby, React, GraphQL, Netlify!
 - 👻 Brainstorming ideas on a haunted places site with a Creative Designer friend.
 - 🌱 I’m currently focused on building things with Ruby on Rails, React, and Gatsby.
@@ -15,3 +8,9 @@
 - 🤔 I’m looking for help with coding best practices.
 - 💬 Ask me about anything.
 - 📧 How to reach me: hello@amytangcodes.com
+
+<br>
+<br>
+<a href="https://www.linkedin.com/in/amytangcodes/">
+  <img align="left" alt="Amy Tang | Linkedin" width="20px" src="./assets/linkedin.svg" />
+</a>
