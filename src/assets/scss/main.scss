@@ -1005,8 +1005,8 @@ input[type='button'],
     background-position: top center;
     &.logo {
       background-image: url('../images/logo-blue.png');
-      height: 3em;
-      width: 3em;
+      height: 2em;
+      width: 2em;
     }
     span {
       display: none;
@@ -1463,7 +1463,7 @@ body.is-touch {
 @include breakpoint(medium) {
   $size-header-pad: 4em;
   body {
-    padding-top: 111px;
+    padding-top: 70px;
   }
 
   /* Basic */
@@ -1652,6 +1652,9 @@ body.is-touch {
 
 @include breakpoint(xsmall) {
   $size-header-pad: 1.5em;
+  p {
+    font-size: _font(size_xxsmall);
+  }
 
   /* List */
 

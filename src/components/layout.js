@@ -2,7 +2,9 @@ import React, { Fragment } from 'react'
 import { StaticQuery } from 'gatsby'
 import Helmet from 'react-helmet'
 
+import MobileNavbar from './MobileNavbar'
 import Header from './DesktopHeader/Header'
+
 import '../assets/scss/main.scss'
 
 const Template = ({ children }) => (
@@ -34,6 +36,7 @@ const Template = ({ children }) => (
 
       return (
         <Fragment>
+          <MobileNavbar data={header} />
           <Helmet
             title={siteTitle}
             meta={[
