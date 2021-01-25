@@ -117,8 +117,6 @@ p {
   margin: 0 0 _size(element-margin_small);
   color: _palette(black);
   font-family: _font(family);
-  font-weight: _font(weight);
-  font-size: _font(size_xxxxlarge);
   letter-spacing: 0em;
   line-height: 1;
 
@@ -976,6 +974,15 @@ input[type='button'],
     line-height: 1.5em;
     margin: 0;
   }
+}
+
+// -----------------------------------------
+// COMMON COMPONENTS
+// -----------------------------------------
+
+.section-header {
+  font-weight: _font(weight);
+  font-size: _font(size_xxxxlarge);
 }
 
 // -----------------------------------------
