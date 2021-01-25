@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Navbar = ({ data }) => {
-  console.log({ data })
   const { menuLinks } = data
 
   const menuBlock = menuLinks.map((link, i) => (
