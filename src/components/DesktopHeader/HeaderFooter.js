@@ -19,13 +19,9 @@ export class HeaderFooter extends Component {
     return (
       <section id="footer">
         {iconBlock}
-        <ul className="copyright">
-          <li>&copy; Amy Tang Codes</li>
-          <li>
-            Design template inspired by{' '}
-            <a href="http://html5up.net">HTML5 UP</a>
-          </li>
-        </ul>
+        <div className="copyright">
+          <p>&copy; Amy Tang Codes</p>
+        </div>
       </section>
     )
   }

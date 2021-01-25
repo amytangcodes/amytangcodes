@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { StaticQuery } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import Header from '.DesktopHeader/Header'
+import Header from './DesktopHeader/Header'
 import '../assets/scss/main.scss'
 
 const Template = ({ children }) => (

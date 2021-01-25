@@ -119,25 +119,7 @@ p {
   font-family: _font(family);
   letter-spacing: 0em;
   line-height: 1;
-
-  .text_strikethrough {
-    position: relative;
-    white-space: nowrap;
-
-    &:before {
-      position: absolute;
-      right: 0px;
-      bottom: 2px;
-      width: 100%;
-      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 570.62 19.61'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.08px;%7D%3C/style%3E%3C/defs%3E%3Cg id='Ebene_2' data-name='Ebene 2'%3E%3Cg id='Ebene_1-2' data-name='Ebene 1'%3E%3Cpath class='cls-1' d='M1,18c17.11-9.66,36-19.67,55.39-16.26C67.09,3.6,76.59,9.41,86.79,13a76.67,96.67,0,0,0,42.49,2.46c10.34-2.37,20.14-6.88,30.61-8.61,13-2.14,26.2.11,39.22,1.94,52.31,7.32,105.32,7.74,158.14,8.14l212.33,1.62'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
   }
-
-  .strikethrough:before {
-    width: 100%;
-    content: url(../images/strikethrough2.svg);
-  }
-}
 
 h1,
 h2,
@@ -613,6 +595,26 @@ input[type='radio'] {
       width: 100%;
     }
   }
+}
+
+/* SVG */
+.text_strikethrough {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+
+  &:before {
+    position: absolute;
+    right: 0px;
+    bottom: 2px;
+    width: 100%;
+    content: url($strikethrough2);
+  }
+}
+
+.svg {
+  position: relative;
+  white-space: nowrap;
 }
 
 /* List */
@@ -1104,6 +1106,9 @@ input[type='button'],
     list-style: none;
     padding: 0;
     margin: 0;
+    .menu__list-item {
+      font-weight: _font(weight_semi-bold);
+    }
     .menu-item {
       padding: 0;
       margin: 10px 0;

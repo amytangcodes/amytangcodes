@@ -10,8 +10,11 @@ const HomeIndex = () => {
           applications. I'm currently interested in roles with a focus on
           full-stack web development.
         </p>
-        <p>I've dabbled in the following:</p>
-        <ul>
+        <div className="section_block">
+          <h2>
+            <em>I've dabbled in the following:</em>
+          </h2>
+          <ul className="section_list svg-heart">
           <li>HTML5, CSS3</li>
           <li>React, NodeJS, Gatsby</li>
           <li>Ruby on Rails, Phoenix/ Elixir</li>
@@ -21,6 +24,8 @@ const HomeIndex = () => {
           <li>Postman</li>
           <li>Github, Terminal</li>
         </ul>
+        </div>
+        <div className="section_block">
         <h2>
           <em>2021 Learning Plan</em>
         </h2>
@@ -29,25 +34,40 @@ const HomeIndex = () => {
           kept busy for most of 2020 renovating my house. 2021 plan is to
           continue learning more about Software Development fundamentals by...
         </p>
-        <p>
-          <span className="text_strikethrough">
+          <ul className="section_list">
+            <li>
+              <p className="text_strikethrough">
             Rebuild my website using Gatsby, Netlify and GraphQL
-          </span>
         </p>
+            </li>
+            <li>
         <p>
           Complete 4-5 algorithm problems weekly at{' '}
           <a href="https://codesignal.com/">Codesignal</a>.
         </p>
+            </li>
+            <li>
         <p>
           Finish Wes Bos'{' '}
           <a href="https://advancedreact.com/">Advanced React</a> course.
         </p>
-        <p>Deploy a timetracker project using Devise with Rails and React.</p>
-        <p>Add projects to this website!</p>
+            </li>
+            <li>
+              <p>
+                Deploy a timetracker project using Devise with Rails and React.
+              </p>
+            </li>
+            <li>
+              <p> Add projects to this website!</p>
+            </li>
+            <li>
         <p>
           Looking for a good tomato timer?{' '}
           <a href="https://pomodoro-tracker.com/">pomodoro timer</a>
         </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </Layout>
   )
