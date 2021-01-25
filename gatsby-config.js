@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Amy Tang Codes',
+    siteTitle: 'Amy Tang',
     author: 'Amy Tang',
     siteDescription: 'Another software developer portfolio site!',
     header: {

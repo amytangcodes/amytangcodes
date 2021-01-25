@@ -38,7 +38,7 @@ const Template = ({ children }) => (
             title={siteTitle}
             meta={[
               { name: 'description', content: { siteDescription } },
-              { name: 'keywords', content: 'Amy Tang Codes' },
+              { name: 'keywords', content: 'Amy Tang | Software Developer' },
             ]}
           ></Helmet>
           <Header data={header} />
