@@ -13,6 +13,10 @@ module.exports = {
           name: 'Resume',
           path: '/resume',
         },
+        {
+          name: 'Contact',
+          path: '/contact',
+        },
       ],
       footerLinks: [
         {

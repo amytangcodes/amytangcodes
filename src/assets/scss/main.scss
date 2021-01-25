@@ -957,6 +957,15 @@ input[type='button'],
   margin-bottom: 20px;
 }
 
+/* Icon */
+.icons {
+  margin: (_size(element-margin) * 0.5) 0 0 0;
+
+  a {
+    color: _palette(fg-light);
+  }
+}
+
 /* Work Item */
 
 .work-item {
@@ -1129,13 +1138,6 @@ input[type='button'],
 #footer {
   position: absolute;
   bottom: 0;
-  .icons {
-    margin: (_size(element-margin) * 0.5) 0 0 0;
-
-    a {
-      color: _palette(fg-light);
-    }
-  }
 
   .copyright {
     color: _palette(fg-light);
@@ -1530,10 +1532,6 @@ body.is-touch {
     text-align: center;
     width: 100%;
 
-    .icons {
-      margin: 0 0 (_size(element-margin) * 0.5) 0;
-    }
-
     .copyright {
       margin: 0 0 (_size(element-margin) * 0.5) 0;
 
@@ -1545,6 +1543,10 @@ body.is-touch {
         padding-left: 0.75em;
       }
     }
+  }
+
+  .icons {
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
   }
 
   /* Main */
