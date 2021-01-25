@@ -19,16 +19,30 @@ $size: (
 // Font.
 $font: (
   family: (
-    'Roboto',
-    Helvetica,
+    'Inter',
     sans-serif,
+    // 'Libre Franklin',
+    // sans-serif,,,,,,,,,,,,,,,
   ),
   family-fixed: (
     'Courier New',
     monospace,
   ),
+  weight-light: 300,
   weight: 400,
-  weight-bold: 400,
+  weight_semi-bold: 600,
+  weight_bold: 700,
+  weight_black: 800,
+  size_xxsmall: 13px,
+  size_xsmall: 14px,
+  size_small: 15px,
+  size_regular: 16px,
+  size_medium: 17px,
+  size_large: 18px,
+  size_xlarge: 19px,
+  size_xxlarge: 20px,
+  size_xxxlarge: 21px,
+  size_xxxxlarge: 24px,
 );
 
 // Palette.
@@ -38,6 +52,8 @@ $palette: (
   fg: #444,
   fg-bold: #787878,
   fg-light: #b2b2b2,
+  orange: #e7530b,
+  orange-hover: #b84208,
   border: #efefef,
   border-bg: #f7f7f7,
   border2: #dfdfdf,

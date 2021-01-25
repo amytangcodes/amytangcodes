@@ -2,14 +2,16 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import '../css/font-awesome.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;700&display=swap');
 
 /*
 	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 @import 'libs/skel';
 
 @include skel-breakpoints(
@@ -72,11 +74,12 @@ body,
 input,
 select,
 textarea {
-  color: _palette(fg);
+  color: _palette(black);
   font-family: _font(family);
-  font-size: 16pt;
   font-weight: _font(weight);
-  line-height: 1.75em;
+  font-size: _font(size_xxxxlarge);
+  letter-spacing: 0em;
+  line-height: 1;
 }
 
 a {
@@ -88,12 +91,13 @@ a {
     )
   );
   border-bottom: dotted 1px;
-  color: _palette(accent1, bg);
+  color: _palette(orange);
   text-decoration: none;
+  margin-bottom: 10px;
 
   &:hover {
     border-bottom-color: transparent;
-    color: _palette(accent1, bg) !important;
+    color: _palette(orange-hover) !important;
     text-decoration: none;
   }
 }
@@ -101,7 +105,7 @@ a {
 strong,
 b {
   color: _palette(fg-bold);
-  font-weight: _font(weight-bold);
+  font-weight: _font(weight_semi-bold);
 }
 
 em,
@@ -110,7 +114,31 @@ i {
 }
 
 p {
-  margin: 0 0 _size(element-margin_small) 0;
+  margin: 0 0 _size(element-margin_small);
+  color: _palette(black);
+  font-family: _font(family);
+  font-weight: _font(weight);
+  font-size: _font(size_xxxxlarge);
+  letter-spacing: 0em;
+  line-height: 1;
+
+  .text_strikethrough {
+    position: relative;
+    white-space: nowrap;
+
+    &:before {
+      position: absolute;
+      right: 0px;
+      bottom: 2px;
+      width: 100%;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 570.62 19.61'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.08px;%7D%3C/style%3E%3C/defs%3E%3Cg id='Ebene_2' data-name='Ebene 2'%3E%3Cg id='Ebene_1-2' data-name='Ebene 1'%3E%3Cpath class='cls-1' d='M1,18c17.11-9.66,36-19.67,55.39-16.26C67.09,3.6,76.59,9.41,86.79,13a76.67,96.67,0,0,0,42.49,2.46c10.34-2.37,20.14-6.88,30.61-8.61,13-2.14,26.2.11,39.22,1.94,52.31,7.32,105.32,7.74,158.14,8.14l212.33,1.62'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+
+  .strikethrough:before {
+    width: 100%;
+    content: url(../images/strikethrough2.svg);
+  }
 }
 
 h1,
@@ -120,7 +148,7 @@ h4,
 h5,
 h6 {
   color: _palette(fg-bold);
-  font-weight: _font(weight-bold);
+  font-weight: _font(weight_semi-bold);
   line-height: 1em;
   margin: 0 0 (_size(element-margin) * 0.5) 0;
 
@@ -279,7 +307,7 @@ label {
   color: _palette(fg-bold);
   display: block;
   font-size: 0.9em;
-  font-weight: _font(weight-bold);
+  font-weight: _font(weight_semi-bold);
   margin: 0 0 (_size(element-margin) * 0.5) 0;
 }
 
@@ -487,7 +515,7 @@ input[type='radio'] {
       'transition',
       'opacity #{_duration(transition)} ease-in-out'
     );
-    background: url('images/overlay.png');
+    // background: url('images/overlay.png');
     border-radius: _size(border-radius);
     content: '';
     display: block;
@@ -513,7 +541,7 @@ input[type='radio'] {
       content: 'View';
       display: inline-block;
       font-size: 0.8em;
-      font-weight: _font(weight-bold);
+      font-weight: _font(weight_semi-bold);
       left: 50%;
       line-height: 2.25em;
       margin: -1.25em 0 0 -3em;
@@ -783,7 +811,7 @@ table {
   th {
     color: _palette(fg-bold);
     font-size: 0.9em;
-    font-weight: _font(weight-bold);
+    font-weight: _font(weight_semi-bold);
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left;
   }
@@ -830,7 +858,8 @@ table {
 }
 
 /* Font */
-.font-linethrough {
+
+.font-strikethrough {
   text-decoration: line-through;
 }
 
@@ -855,7 +884,7 @@ input[type='button'],
   color: _palette(fg-bold) !important;
   cursor: pointer;
   display: inline-block;
-  font-weight: _font(weight-bold);
+  font-weight: _font(weight_semi-bold);
   height: 3.15em;
   height: calc(2.75em + 6px);
   line-height: 2.75em;
@@ -925,7 +954,7 @@ input[type='button'],
 }
 
 .button-container {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* Work Item */
@@ -952,6 +981,29 @@ input[type='button'],
 // -----------------------------------------
 // MAIN SECTIONS/ COMPONENTS
 // -----------------------------------------
+
+/* Navbar */
+#navbar {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 9999999;
+  .image {
+    margin: _size(border-radius);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    &.logo {
+      background-image: url('../images/logo-blue.png');
+      height: 3em;
+      width: 3em;
+    }
+    span {
+      display: none;
+    }
+  }
+}
 
 /* Header */
 
@@ -980,7 +1032,6 @@ input[type='button'],
   }
 
   > .inner {
-    max-width: 300px;
     &:after {
       background: _palette(border2);
       background: linear-gradient(
@@ -1023,14 +1074,16 @@ input[type='button'],
     margin: 0;
   }
 
-  .image.avatar {
+  .image {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
-    background-image: url('../images/avatar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    width: 10em;
-    height: 10em;
+    &.avatar {
+      background-image: url('../images/avatar.jpg');
+      width: 10em;
+      height: 10em;
+    }
     span {
       display: none;
     }
@@ -1052,6 +1105,10 @@ input[type='button'],
         border: 0;
       }
     }
+  }
+
+  .menu__list-item {
+    margin-bottom: 10px;
   }
 }
 
@@ -1104,11 +1161,7 @@ input[type='button'],
     $size-header-pad;
   width: calc(100% - #{$size-header-width});
 
-  p {
-    font-size: 1.1em;
-  }
-
-  > section {
+  & > section {
     border-top: solid 2px _palette(border);
     margin: $size-header-pad 0 0 0;
     padding: $size-header-pad 0 0 0;
@@ -1376,7 +1429,6 @@ body.is-touch {
       li {
         border-left-width: 0;
         display: block;
-        line-height: 2.25em;
         margin-left: 0;
         padding-left: 0;
       }
@@ -1398,6 +1450,9 @@ body.is-touch {
 
 @include breakpoint(medium) {
   $size-header-pad: 4em;
+  body {
+    padding-top: 111px;
+  }
 
   /* Basic */
 
@@ -1424,6 +1479,11 @@ body.is-touch {
     }
   }
 
+  /* Navbar */
+  #navbar {
+    display: flex;
+  }
+
   /* Header */
 
   #header {
@@ -1436,7 +1496,7 @@ body.is-touch {
     text-align: center;
     top: auto;
     width: 100%;
-    display: block;
+    display: none;
 
     h1 {
       font-size: 1.75em;
@@ -1640,7 +1700,7 @@ body.is-touch {
       li {
         border-left-width: 0;
         display: block;
-        line-height: 2.25em;
+        // line-height: 2.25em;
         margin-left: 0;
         padding-left: 0;
       }

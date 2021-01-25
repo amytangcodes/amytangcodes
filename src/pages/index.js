@@ -5,7 +5,7 @@ const HomeIndex = () => {
   return (
     <Layout>
       <section id="one">
-        <p>
+        <p className="section-header">
           I'm a Software Developer with a mix of experience working on web
           applications. I'm currently interested in roles with a focus on
           full-stack web development.
@@ -29,11 +29,13 @@ const HomeIndex = () => {
           kept busy for most of 2020 renovating my house. 2021 plan is to
           continue learning more about Software Development fundamentals by...
         </p>
-        <p className="font-linethrough">
-          Rebuild amytangcodes.com using Gatsby, Netlify and GraphQL
+        <p>
+          <span className="text_strikethrough">
+            Rebuild my website using Gatsby, Netlify and GraphQL
+          </span>
         </p>
         <p>
-          Complete 4-5 algorithm problems weekly. Check out{' '}
+          Complete 4-5 algorithm problems weekly at{' '}
           <a href="https://codesignal.com/">Codesignal</a>.
         </p>
         <p>
@@ -43,8 +45,8 @@ const HomeIndex = () => {
         <p>Deploy a timetracker project using Devise with Rails and React.</p>
         <p>Add projects to this website!</p>
         <p>
-          Oh by the way, this{' '}
-          <a href="https://pomodoro-tracker.com/">pomodoro timer</a> is awesome!
+          Looking for a good tomato timer?{' '}
+          <a href="https://pomodoro-tracker.com/">pomodoro timer</a>
         </p>
       </section>
     </Layout>
