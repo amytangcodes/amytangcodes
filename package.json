@@ -5,7 +5,7 @@
   "author": "Hunter Chang",
   "dependencies": {
     "@popperjs/core": "^2.6.0",
-    "bootstrap": "^5.0.0-beta1",
+    "bootstrap": "^4.6.0",
     "gatsby": "^2.20.12",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
